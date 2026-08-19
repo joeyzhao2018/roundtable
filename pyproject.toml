@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roundtable"
+version = "0.1.0"
+description = "A script-driven round-table coordinator for CLI coding agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[project.scripts]
+roundtable = "roundtable.cli:main"
+
+[tool.setuptools]
+packages = ["roundtable"]
